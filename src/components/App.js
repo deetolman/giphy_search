@@ -1,8 +1,15 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
+import SearchBar from './SearchBar';
 
-function App() {
-  return (
-    <h1>Hello!</h1>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <SearchBar />
+      </div>
+    );
+  }
 }
 export default App;
+ReactDOM.render(<App />, document.getElementById('app'));
