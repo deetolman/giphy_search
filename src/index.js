@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import GifList from './components/GifList';
 import SearchBar from './components/SearchBar';
 import request from 'superagent';
-
+import Styles from './index.css';
 class App extends React.Component {
   constructor() {
     super();
@@ -21,7 +21,9 @@ class App extends React.Component {
   };
   render() {
     return (
-      <div>
+      <div className={Styles.App}>
+        <h1>Welcome to Giphy Search!</h1>
+        <h3>You can search our library of gifs by typing in your keyword below.</h3>
         <SearchBar onTermChange={this.handleTermChange} />
         <GifList gifs={this.state.gifs} />
       </div>

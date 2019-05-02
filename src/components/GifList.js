@@ -1,5 +1,6 @@
 import React from 'react';
 import GifItem from './GifItem';
+import Styles from '../index.css';
 
 const GifList = (props) => {
   const gifItems = props.gifs.map((image) => {
@@ -7,7 +8,9 @@ const GifList = (props) => {
   });
   return (
     <>
-    <ul>{gifItems}</ul>
+    <div className={Styles.List}>
+      <ul>{gifItems}</ul>
+    </div>
     </>
   );
 };

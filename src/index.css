@@ -1,0 +1,40 @@
+* {
+  font-family: 'raleway';
+  list-style: none;
+  background-color: #FFEFA2;
+}
+.App {
+  h1, h3 {
+    text-align: center;
+    color: #454545;
+  }
+}
+.Search{
+  text-align: center;
+  margin: 3em;
+  padding: 0;
+}
+img {
+  width: 70%;
+}
+
+.Item {
+  box-shadow: 2px 2px 4px 2px #ccc;
+  box-sizing: border-box;
+  margin: 0 0 1.5em;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+.List {
+ul {
+  padding: 10px 10px 10px 10px;
+}
+}
+input {
+  height: 30px;
+  font-size: 22px;
+  width: 250px;
+  text-align: center;
+  background-color: white;
+}

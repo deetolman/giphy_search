@@ -1,10 +1,13 @@
 import React from 'react';
+import Styles from '../index.css';
 
 const GiftItem = (image) => {
   return (
-    <li>
-      <img src={image.gif.images.downsized.url} />
-    </li>
+    <div className={Styles.Item}>
+      <li>
+        <img src={image.gif.images.downsized.url} />
+      </li>
+    </div>
   );
 };
 
